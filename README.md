@@ -29,7 +29,16 @@ bioinformatics-workshop/
 │   └── scRNA-Seq/          # scRNA-Seq analysis scripts
 │       ├── scRNA-Seq Pipeline.Rmd
 │       └── scRNA-Seq-Pipeline.html
-└── README.md               # This file
+├── workshop-presentation.pptx  # PowerPoint presentation for the workshop
+└── write/                  # Generated figures and tables
+    ├── figures/            # Visual outputs
+    │   ├── Batch PCA.png
+    │   ├── Cell Cycle Phase PCA.png
+    │   ├── Seurat Clusters UMAP.png
+    │   └── ... (other figures)
+    └── tables/             # Tabular outputs
+        ├── ClusterMarkers.csv
+        └── ConditionMarkers.csv
 ```
 
 ## Workshop Goals
@@ -62,7 +71,7 @@ To follow along with the hands-on sections of this workshop:
 
 ## Materials
 This repository contains:
-- **Scripts**: Pre-written R scripts to guide hands-on exercises.
+- **Scripts**: Pre-written R scripts to guide the analysis.
 - **Datasets**: Example datasets for analysis.
 - **Slides**: Presentation slides covering theoretical concepts.
 
