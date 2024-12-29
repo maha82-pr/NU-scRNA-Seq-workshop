@@ -1,0 +1,131 @@
+---
+title: "Introduction to R and RStudio for Beginners"
+output: html_document
+mathjax: default
+---
+
+# Introduction
+
+Welcome to the R workshop! 🎉 In this session, we will explore some fundamental concepts in R programming. Let’s dive in! 🏊‍♂️
+
+## Variables
+
+### What are Variables?
+
+Variables are like containers that store data. For example, `x = 5` means we are storing the value `5` in a variable called `x`.
+
+### How to Create Variables?
+
+```{r}
+# Assigning values to variables
+x <- 10
+name <- "John"
+is_student <- TRUE
+```
+
+### Types of Variables
+
+Variables can store different types of data: - **Numeric**: Numbers (e.g., `5`, `3.14`) - **Character**: Text (e.g., "hello") - **Logical**: TRUE or FALSE
+
+### How to Check the Type of a Variable?
+
+Use the `class()` function to check the type:
+
+```{r}
+# Checking types
+class(x)        # Output: "numeric"
+class(name)     # Output: "character"
+class(is_student) # Output: "logical"
+```
+
+## Vectors
+
+Vectors are sequences of elements of the same type. They are the most basic data structure in R. Types of vectors are ( numeric, character and logical )
+
+### How to create a vector
+
+```{r}
+# Numeric vector
+num_vec <- c(1, 2, 3, 4)
+
+# Character vector
+char_vec <- c("A", "B", "C")
+
+# Logical vector
+log_vec <- c(TRUE, FALSE, TRUE)
+```
+
+### Checking the type of a vector
+
+Use `class()` or `typeof()`:
+
+```{r}
+class(num_vec)  # Numeric
+```
+
+## Data Frames
+
+### What are Data Frames?
+
+A data frame in R is a two-dimensional, tabular data structure that is widely used for storing data. It is similar to a spreadsheet or database table where each c**olumn can contain different types of (variables)** data (numeric, character, logical, etc.), and **each row represents an (observation) or a case.**
+
+### How to Access Columns with `$`?
+
+You can access columns with \$ sign for simple manipulations
+
+```{r}
+# using pre-installed Data Frames 
+iris
+
+# Accessing a column
+iris$Sepal.Length
+iris$Sepal.Width
+```
+
+## Functions
+
+### What is a Function?
+
+A function is a block of code that performs a specific task. For example, the `mean()` function calculates the average of a set of numbers.
+
+### How to Use a Function?
+
+```{r}
+# Using the mean() function
+numbers <- c(10, 20, 30, NA)
+mean(numbers, na.rm = TRUE)  # Output: 20
+```
+
+### What are Arguments?
+
+Arguments specify how the function should work: - **Required arguments**: Must be provided (e.g., the data for `mean()`). - **Optional arguments**: Have default values (e.g., `na.rm = FALSE` by default).
+
+## Packages
+
+### What are Packages?
+
+Packages are collections of R functions, data, and compiled code in a well-defined format. The directory where packages are stored is called the library.
+
+### How to Install a Package?
+
+Use the `install.packages()` function:
+
+```{r}
+# basic installation
+install.packages("tidyverse")
+
+```
+
+### How to Use a Package?
+
+After installing, load the package with `library()`:
+
+```{r}
+library(tidyverse)
+```
+
+------------------------------------------------------------------------
+
+$$
+\textbf{\huge{Congratulations \; \text{on} \; \text{learning} \; \text{these} \; \text{essential} \; R \; \text{concepts!} \; 🚀}}
+$$

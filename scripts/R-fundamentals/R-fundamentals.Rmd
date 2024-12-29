@@ -1,0 +1,148 @@
+---
+title: "Introduction to R and RStudio for Beginners"
+author: "Badran Elshenawy & Abdallah Ebady"
+output: html_document
+---
+
+# Introduction 🎉
+
+Welcome to the R workshop! This session is like starting a game with a new champion—you might be unfamiliar at first, but you'll master it soon! 🏆 Let’s dive into the fundamentals of R programming. 🏊‍♂️
+
+## Variables 📦
+
+### What are Variables? 🤔
+
+Think of variables as storage boxes where you can keep your items (data). For example:
+
+-   **Numeric box**: Keeps numbers (like 5 or 3.14)
+-   **Character box**: Stores text (like "hello")
+-   **Logical box**: True/False values
+
+📌 **Example:** `x = 5` stores the number 5 in a variable called `x`.
+
+### How to Create Variables? ✍️
+
+```{r}
+# Assigning values to variables
+x <- 10   # A numeric value
+name <- "John"   # A character value
+is_student <- TRUE  # A logical value
+```
+
+### Checking Variable Types 🕵️
+
+Use the `class()` function to figure out what type of data a variable is holding:
+
+```{r}
+class(x)          # "numeric"
+class(name)       # "character"
+class(is_student) # "logical"
+```
+
+## Vectors 🎯
+
+Vectors are like playlists—they hold multiple items of the same type. 📜 For example:
+
+-   A playlist of songs (character values)
+-   A list of high scores (numeric values)
+
+### Creating a Vector 🛠️
+
+Use `c()` to combine values into a vector:
+
+```{r}
+# A numeric vector
+scores <- c(10, 20, 30, 40)
+
+# A character vector
+names <- c("Alice", "Bob", "Charlie")
+
+# A logical vector
+truths <- c(TRUE, FALSE, TRUE)
+```
+
+### Accessing Vector Elements 🔍
+
+Just like you pick a specific song from your playlist:
+
+```{r}
+scores[1]  # Gets the first element (10)
+scores[2:3]  # Gets the second and third elements (20, 30)
+```
+
+### Vector Operations ✨
+
+R lets you apply operations to all elements in one go (mass spells, anyone?):
+
+```{r}
+scores + 10  # Adds 10 to each score
+scores * 2   # Doubles each score
+```
+
+## Functions 🛠️
+
+### What are Functions? 📚
+
+Functions are like special abilities—you invoke them to perform a task! 🪄 For example:
+
+-   `sum()` adds up numbers.
+-   `mean()` calculates the average.
+
+### Using Functions 👩‍🔬
+
+```{r}
+# Summing a vector
+total <- sum(scores)  # Output: 100
+
+# Calculating mean
+average <- mean(scores)  # Output: 25
+```
+
+### Writing Your Own Function ✍️
+
+Make your own spells (functions):
+
+```{r}
+# A function to square a number
+square <- function(x) {
+  return(x * x)
+}
+
+square(4)  # Output: 16
+```
+
+## Data Frames 🗂️
+
+Think of data frames as spreadsheets—they organize data into rows and columns. ✨
+
+### Creating a Data Frame 📋
+
+```{r}
+# Creating a data frame
+data <- data.frame(
+  Name = c("Alice", "Bob", "Charlie"),
+  Score = c(85, 92, 78),
+  Passed = c(TRUE, TRUE, FALSE)
+)
+
+print(data)
+```
+
+### Accessing Data 🔑
+
+```{r}
+data$Score      # Access the 'Score' column
+data[1, ]       # Access the first row
+data[ ,2]       # Access the second column
+```
+
+## Wrapping Up 🎁
+
+You're now equipped with the basics of R programming! 🎉 Keep practicing, and soon you'll feel like a pro adventurer navigating data with ease. 🚀
+
+### Pro Tips 🌟
+
+-   **Help is Your Friend**: Use `?function_name` for help (e.g., `?sum`).
+-   **Explore More**: Libraries like `tidyverse` open up powerful tools for data manipulation.
+
+Good luck, summoners! 🏆
