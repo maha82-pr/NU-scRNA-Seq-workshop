@@ -29,16 +29,7 @@ bioinformatics-workshop/
 │   └── scRNA-Seq/          # scRNA-Seq analysis scripts
 │       ├── scRNA-Seq Pipeline.Rmd
 │       └── scRNA-Seq-Pipeline.html
-├── workshop-presentation.pptx  # PowerPoint presentation for the workshop
-└── write/                  # Generated figures and tables
-    ├── figures/            # Visual outputs
-    │   ├── Batch PCA.png
-    │   ├── Cell Cycle Phase PCA.png
-    │   ├── Seurat Clusters UMAP.png
-    │   └── ... (other figures)
-    └── tables/             # Tabular outputs
-        ├── ClusterMarkers.csv
-        └── ConditionMarkers.csv
+└── workshop-presentation.pptx  # PowerPoint presentation for the workshop
 ```
 
 ## Workshop Goals
